@@ -42,19 +42,30 @@ h1{
 ol{
   border: 2px dashed grey;
   border-radius: 10px;
-
+  height: 250px;
+  overflow: auto;
 }
 .carOfPower{
   margin-top: -21px;
   margin-bottom: -21px;
 }
+.leftList{
+  height: 250px;
+  width: 382px;
+  overflow: auto;
+}
 .rightList{
   text-align: right;
+  overflow: auto;
+  height: 250px;
+  width: 382px;
 }
 ul{
   list-style-type:none;
   padding-right: 34px;
   border: 2px dashed grey;
   border-radius: 10px;
-  
+}
+.selfDestruct{
+  padding: auto;
 }

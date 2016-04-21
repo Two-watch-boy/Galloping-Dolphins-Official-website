@@ -1,10 +1,10 @@
-var marcusArr = ["Batti 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Commet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "fact", "Moonbeam", "Tornado", "Voodoo"];
+var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Commet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo"];
 
-var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion", "Panto", "Blista", "Comet", "Kuruma", "Batti 801"];
+var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
 
 var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Commet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackel", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phonex", "Buccaneer", "Tornado", "Virgo", "Coquette Clasic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
 
-var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "end", "Sanchez", "Batti 801", "Bagger"];
+var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "end", "Sanchez", "Bati 801", "Bagger"];
 
 min = 0;
 marcusMax = marcusArr.length;
@@ -45,8 +45,8 @@ $(document).ready(function() {
 
   function marcusArrVal(){
     var y = getRandomInt(0, marcusMax);
-    console.log("random number", y-1);
-    var carChosenMarcus = marcusArr[y-1];
+    console.log("random number", y);
+    var carChosenMarcus = marcusArr[y];
     console.log("car selected", carChosenMarcus);
     $("#marcusRandomResult").empty();
     $("#marcusRandomResult").append('<p class="carOfPower">' + carChosenMarcus + '</p>');
@@ -54,8 +54,8 @@ $(document).ready(function() {
 
   function naomiArrVal(){
     var y = getRandomInt(0, naomiMax);
-    console.log("random number", y-1);
-    var carChosenNaomi = naomiArr[y-1];
+    console.log("random number", y);
+    var carChosenNaomi = naomiArr[y];
     console.log("car selected", carChosenNaomi);
     $("#naomiRandomResult").empty();
     $("#naomiRandomResult").append('<p class="carOfPower">' + carChosenNaomi + '</p>');
@@ -63,8 +63,8 @@ $(document).ready(function() {
 
   function paulArrVal(){
     var y = getRandomInt(0, paulMax);
-    console.log("random number", y-1);
-    var carChosenPaul = paulArr[y-1];
+    console.log("random number", y);
+    var carChosenPaul = paulArr[y];
     console.log("car selected", carChosenPaul);
     $("#paulRandomResult").empty();
     $("#paulRandomResult").append('<p class="carOfPower">' + carChosenPaul + '</p>');
@@ -72,8 +72,8 @@ $(document).ready(function() {
 
   function mikeArrVal(){
     var y = getRandomInt(0, mikeMax);
-    console.log("random number", y-1);
-    var carChosenMike = mikeArr[y-1];
+    console.log("random number", y);
+    var carChosenMike = mikeArr[y];
     console.log("car selected", carChosenMike);
     $("#mikeRandomResult").empty();
     $("#mikeRandomResult").append('<p class="carOfPower">' + carChosenMike + '</p>');
