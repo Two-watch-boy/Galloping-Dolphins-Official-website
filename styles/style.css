@@ -1,0 +1,60 @@
+#cover{
+  font-size: 40px;
+  text-align: center;
+}
+#cover_image{
+  width: 100%;
+  padding-bottom: -45px;
+}
+header {
+  text-align: center;
+  /*background-size: cover;*/
+}
+h1{
+  font-size: 50px;
+}
+.playerCars{
+  text-align: center;
+}
+.intro{
+  text-align: center
+}
+.marcusCars{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.naomiCars{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.paulCars{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mikeCars{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ol{
+  border: 2px dashed grey;
+  border-radius: 10px;
+
+}
+.carOfPower{
+  margin-top: -21px;
+  margin-bottom: -21px;
+}
+.rightList{
+  text-align: right;
+}
+ul{
+  list-style-type:none;
+  padding-right: 34px;
+  border: 2px dashed grey;
+  border-radius: 10px;
+  
+}
