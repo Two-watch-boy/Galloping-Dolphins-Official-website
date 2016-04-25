@@ -25,6 +25,9 @@ header {
 h1{
   font-size: 50px;
 }
+.intro{
+  padding-top: 10px;
+}
 .playerCars{
   text-align: center;
 }
@@ -57,9 +60,14 @@ ol{
   height: 250px;
   overflow: auto;
 }
+.carGoesHere{
+  padding-bottom: 10px
+}
 .carOfPower{
-  margin-top: -21px;
-  margin-bottom: -21px;
+  margin-top: -31px;
+  margin-bottom: -25px;
+  font-family: 'Bangers', cursive;
+  font-size: 25px
 }
 .leftList{
   height: 250px;
