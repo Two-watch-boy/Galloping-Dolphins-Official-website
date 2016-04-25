@@ -7,10 +7,10 @@ var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "
 var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "end", "Sanchez", "Bati 801", "Bagger"];
 
 min = 0;
-marcusMax = marcusArr.length;
-naomiMax = naomiArr.length;
-paulMax = paulArr.length;
-mikeMax = mikeArr.length;
+marcusMax = marcusArr.length - 1;
+naomiMax = naomiArr.length -1;
+paulMax = paulArr.length -1;
+mikeMax = mikeArr.length -1;
 
 
 $(document).ready(function() {
