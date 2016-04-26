@@ -4,7 +4,7 @@ var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "To
 
 var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Commet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackel", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phonex", "Buccaneer", "Tornado", "Virgo", "Coquette Clasic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
 
-var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "end", "Sanchez", "Bati 801", "Bagger"];
+var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger"];
 
 min = 0;
 marcusMax = marcusArr.length - 1;
