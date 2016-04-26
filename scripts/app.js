@@ -49,7 +49,19 @@ $(document).ready(function() {
     var carChosenMarcus = marcusArr[y];
     console.log("car selected", carChosenMarcus);
     $("#marcusRandomResult").empty();
-    $("#marcusRandomResult").append('<p class="carOfPower">' + carChosenMarcus + '</p>');
+    $("#marcusRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-marcus progress-bar-warning" style="width: 0%"></div></div>');
+    for (var i = 0; i < 150; i ++){
+      setTimeout(function () {
+        $(".progress-marcus").css("width", i);
+        // console.log("heres the value of i ",i);
+        i++;
+      },250);
+    }
+    setTimeout(function () {
+      $("#marcusRandomResult").empty();
+      $("#marcusRandomResult").append('<p class="carOfPower">' + carChosenMarcus + '</p>');
+    },750);
+
   }
 
   function naomiArrVal(){
@@ -58,7 +70,18 @@ $(document).ready(function() {
     var carChosenNaomi = naomiArr[y];
     console.log("car selected", carChosenNaomi);
     $("#naomiRandomResult").empty();
-    $("#naomiRandomResult").append('<p class="carOfPower">' + carChosenNaomi + '</p>');
+    $("#naomiRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-naomi progress-bar-danger" style="width: 0%"></div></div>');
+    for (var i = 0; i < 150; i ++){
+      setTimeout(function () {
+        $(".progress-naomi").css("width", i);
+        // console.log("heres the value of i ",i);
+        i++;
+      },250);
+    }
+    setTimeout(function () {
+      $("#naomiRandomResult").empty();
+      $("#naomiRandomResult").append('<p class="carOfPower">' + carChosenNaomi + '</p>');
+    },750);
   }
 
   function paulArrVal(){
@@ -67,7 +90,18 @@ $(document).ready(function() {
     var carChosenPaul = paulArr[y];
     console.log("car selected", carChosenPaul);
     $("#paulRandomResult").empty();
-    $("#paulRandomResult").append('<p class="carOfPower">' + carChosenPaul + '</p>');
+    $("#paulRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-paul" style="width: 0%"></div></div>');
+    for (var i = 0; i < 150; i ++){
+      setTimeout(function () {
+        $(".progress-paul").css("width", i);
+        // console.log("heres the value of i ",i);
+        i++;
+      },250);
+    }
+    setTimeout(function () {
+      $("#paulRandomResult").empty();
+      $("#paulRandomResult").append('<p class="carOfPower">' + carChosenPaul + '</p>');
+    },750);
   }
 
   function mikeArrVal(){
@@ -76,7 +110,18 @@ $(document).ready(function() {
     var carChosenMike = mikeArr[y];
     console.log("car selected", carChosenMike);
     $("#mikeRandomResult").empty();
-    $("#mikeRandomResult").append('<p class="carOfPower">' + carChosenMike + '</p>');
+    $("#mikeRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-mike progress-bar-success" style="width: 0%"></div></div>');
+    for (var i = 0; i < 150; i ++){
+      setTimeout(function () {
+        $(".progress-mike").css("width", i);
+        // console.log("heres the value of i ",i);
+        i++;
+      },250);
+    }
+    setTimeout(function () {
+      $("#mikeRandomResult").empty();
+      $("#mikeRandomResult").append('<p class="carOfPower">' + carChosenMike + '</p>');
+    },750);
   }
 
   function getRandomInt(min, max) {
@@ -93,5 +138,5 @@ function handleSelfDestruct(){
   setTimeout(function () {
      window.location.href= 'self_destruct/countdown_3.html'; // the redirect goes here
 
-  },500); // 5 seconds
+  },500);
 }
