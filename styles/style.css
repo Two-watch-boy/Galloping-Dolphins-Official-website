@@ -82,10 +82,24 @@ ol{
 }
 ul{
   list-style-type:none;
-  padding-right: 34px;
+  padding-right: 30px;
   border: 2px dashed grey;
   border-radius: 10px;
 }
 .selfDestruct{
   float: right;
+}
+@media (max-width: 1000px) {
+  header{
+    height: 390px;
+  }
+  .gucci{
+    padding-top: 50px;
+  }
+  .gucci2{
+    padding-top: 45px;
+  }
+  .leftList{
+    margin-left: -100px;
+  }
 }
