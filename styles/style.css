@@ -17,10 +17,12 @@
 header {
   text-align: center;
   background-image: url("../images/gtavlogo.gif");
+  background-attachment: fixed;
   background-size: cover;
   height: 500px;
   padding-top: 1px;
   margin-top: -22px;
+  background-position: -133px;
 }
 .gucci{
   padding-top: 100px;
@@ -77,6 +79,7 @@ ol{
   margin-top: -31px;
   margin-bottom: -25px;
   font-family: 'Bangers', cursive;
+  text-shadow: 1px 1px black;
   font-size: 25px
 }
 .leftList{
@@ -102,10 +105,23 @@ ol{
 .progress{
   margin-top: -26px;
   margin-bottom: -16px;
+  text-align:center;
+}
+.progress-value {
+    position:absolute;
+    right:0;
+    left:0;
+    color: black;
+    font-family: 'Bangers', cursive;
+    text-shadow: .5px .5px lightgrey;
+    font-size: 20px;
 }
 @media (max-width: 1000px) {
   header{
     height: 390px;
+    background-position: center 40px;
+    background-size: contain;
+
   }
   .gucci{
     padding-top: 50px;
