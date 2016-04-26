@@ -26,6 +26,46 @@
     <title>Fun in GTA</title>
   </head>
   <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Galloping Dolphins</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <ul class="nav navbar-nav">
+                <li><a href="https://socialclub.rockstargames.com/crew/galloping_dolphins">R*</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#playerCards">Players</a></li>
+                    <li><a href="#getSomeCars">Cars</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     <header>
       <div class="container">
         <div class="row">
@@ -38,7 +78,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-offset-3 col-sm-6 intro">
-          <p class="intro">
+          <p class="intro" id="intro">
             This here is a project website, dedicated to the shenanigans put on by a group of friends who just like to have a good time in Grand Theft Auto V.
             Most of what you'll find here are things we do, stuff we say, and other obsurd things.
           </p>
@@ -47,7 +87,7 @@
       <hr><hr>
       <div class="row">
         <div class="col-sm-offset-1 col-sm-5">
-          <ul class="leftList">
+          <ul class="leftList dots">
           </br>
             <li>We Gucci?</li>
             <li>Oh we gucci </li>
@@ -69,7 +109,7 @@
           </ul>
         </div>
         <div class="col-sm-5">
-          <ul class="rightList">
+          <ul class="rightList dots">
           </br>
             <li>You are a gentleman and a scholar </li>
             <li>I found a _____ !</li>
@@ -91,20 +131,20 @@
           </ul>
         </div>
       </div>
-      <hr><hr>
-      <div class="row">
+      <hr><hr id="playerCards">
+      <div class="row" >
         <div class="col-xs-3 playerCars">
           <img class="mugshotFreemode" src="https://prod.cloud.rockstargames.com/members/sc/2020/64688708/publish/gta5/mpchars/0.png" alt="">
           <h3>Marcus</h3>
           <h4><a href="https://socialclub.rockstargames.com/member/kingofpaladins">KingofPaladins</a></h4>
           <hr><hr>
-          <ul>Skills:
+          <ul class="dots">Skills:
             <li>Class</li>
             <li>Stealth</li>
             <li>Long Range</li>
             <li>Motorcycles</li>
           </ul>
-          <hr><hr>
+          <hr><hr id="getSomeCars">
           <p>Marcus's cars</p>
           <input class="btn btn-warning" id="marcusRandom" type="submit" value="Get Random"></input>
           <hr><hr class="carGoesHere">
@@ -119,7 +159,7 @@
           <h3>Naomi</h3>
           <h4><a href="https://socialclub.rockstargames.com/member/inferno9501">Inferno9501</a></h4>
           <hr><hr>
-          <ul>Skills:
+          <ul class="dots">Skills:
             <li>Style</li>
             <li>Explosives</li>
             <li>Mid Range</li>
@@ -141,7 +181,7 @@
           <h3>Paul</h3>
           <h4><a href="https://socialclub.rockstargames.com/member/twowatchboy">TwoWatchBoy</a></h4>
           <hr><hr>
-          <ul>Skills:
+          <ul class="dots">Skills:
             <li>Chaos</li>
             <li>Driving</li>
             <li>Mid Range</li>
@@ -163,7 +203,7 @@
           <h3>Mike</h3>
           <h4><a href="https://socialclub.rockstargames.com/member/mr.ocd/">Mr.OCD</a></h4>
           <hr><hr>
-          <ul>Skills:
+          <ul class="dots">Skills:
             <li>Fruity</li>
             <li>Driving</li>
             <li>Close Range</li>

@@ -6,12 +6,21 @@
   width: 100%;
   padding-bottom: -45px;
 }
+
+.fixed {
+    position:fixed;
+    z-index:999;
+    width: 100%;
+    padding-top: 20px;
+}
+
 header {
   text-align: center;
   background-image: url("../images/gtavlogo.gif");
   background-size: cover;
   height: 500px;
   padding-top: 1px;
+  margin-top: -22px;
 }
 .gucci{
   padding-top: 100px;
@@ -21,6 +30,7 @@ header {
 }
 .gucci2{
   padding-top: 125px;
+
 }
 h1{
   font-size: 50px;
@@ -80,7 +90,7 @@ ol{
   height: 250px;
   width: 382px;
 }
-ul{
+.dots{
   list-style-type:none;
   padding-right: 30px;
   border: 2px dashed grey;

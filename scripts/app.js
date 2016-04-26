@@ -15,6 +15,15 @@ mikeMax = mikeArr.length -1;
 
 $(document).ready(function() {
 
+
+  $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > 1) {
+          $('.navbar').addClass('fixed');
+      } else {
+          $('.navbar').removeClass('fixed');
+      }
+  });
+
   for (var a = 0; a <marcusArr.length; a++){
     // console.log ("Marcus", marcusArr[a]);
     $(".marcusCars").append('<li>' + marcusArr[a] + '</li>');
