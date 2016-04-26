@@ -58,7 +58,7 @@ $(document).ready(function() {
     var carChosenMarcus = marcusArr[y];
     console.log("car selected", carChosenMarcus);
     $("#marcusRandomResult").empty();
-    $("#marcusRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-marcus progress-bar-warning" style="width: 0%"></div></div>');
+    $("#marcusRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-marcus progress-bar-warning" style="width: 0%"><span class="progress-value">Thinking</span></div></div>');
     for (var i = 0; i < 150; i ++){
       setTimeout(function () {
         $(".progress-marcus").css("width", i);
@@ -79,7 +79,7 @@ $(document).ready(function() {
     var carChosenNaomi = naomiArr[y];
     console.log("car selected", carChosenNaomi);
     $("#naomiRandomResult").empty();
-    $("#naomiRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-naomi progress-bar-danger" style="width: 0%"></div></div>');
+    $("#naomiRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-naomi progress-bar-danger" style="width: 0%"><span class="progress-value">Thinking</span></div></div>');
     for (var i = 0; i < 150; i ++){
       setTimeout(function () {
         $(".progress-naomi").css("width", i);
@@ -99,7 +99,7 @@ $(document).ready(function() {
     var carChosenPaul = paulArr[y];
     console.log("car selected", carChosenPaul);
     $("#paulRandomResult").empty();
-    $("#paulRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-paul" style="width: 0%"></div></div>');
+    $("#paulRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-paul" style="width: 0%"><span class="progress-value">Thinking</span></div></div>');
     for (var i = 0; i < 150; i ++){
       setTimeout(function () {
         $(".progress-paul").css("width", i);
@@ -119,7 +119,7 @@ $(document).ready(function() {
     var carChosenMike = mikeArr[y];
     console.log("car selected", carChosenMike);
     $("#mikeRandomResult").empty();
-    $("#mikeRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-mike progress-bar-success" style="width: 0%"></div></div>');
+    $("#mikeRandomResult").append('<div class="progress progress-striped active"><div class="progress-bar progress-mike progress-bar-success" style="width: 0%"><span class="progress-value">Thinking</span></div></div>');
     for (var i = 0; i < 150; i ++){
       setTimeout(function () {
         $(".progress-mike").css("width", i);
