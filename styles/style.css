@@ -51,9 +51,6 @@ h1{
 .intro{
   text-align: center
 }
-.5{
-  display: inline-block;;
-}
 .mugshotFreemode{
   background-image: url(https://cdn.sc.rockstargames.com/images/games/GTAV/nav/photo-bg.png);
   background-attachment: fixed;
@@ -132,6 +129,10 @@ ol{
     font-family: 'Bangers', cursive;
     text-shadow: .5px .5px lightgrey;
     font-size: 20px;
+}
+#gitHub{
+  padding-left: 5px;
+  height: 25px;
 }
 @media (max-width: 1441px) {
   header{
