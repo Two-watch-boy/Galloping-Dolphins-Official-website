@@ -17,6 +17,9 @@
   height: 40px;
   margin-top: -7px;
 }
+.container-fluid{
+  background-color: #466582
+}
 header {
   text-align: center;
   background-image: url("../images/gtavlogo.gif");
