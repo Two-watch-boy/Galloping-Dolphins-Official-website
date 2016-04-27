@@ -145,7 +145,7 @@ function handleSelfDestruct(){
   $(".selfDestruct").val('(=--boom--=)');
   alert("Don't worry, this button doesn't actually work... yet...");
   setTimeout(function () {
-     window.location.href= 'self_destruct/countdown_3.html'; // the redirect goes here
+     window.location.href= 'self_destruct/selfDestruct.html'; // the redirect goes here
 
   },500);
 }

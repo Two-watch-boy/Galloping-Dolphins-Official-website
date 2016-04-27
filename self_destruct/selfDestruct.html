@@ -6,12 +6,21 @@
     <link rel="stylesheet" href="http://bootswatch.com/superhero/bootstrap.min.css" />
 
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <style media="screen">
       html{
-        background-image: url("../images/nuke2.gif");
-        background-size: cover;
+        background-image: url("../images/nukeBlueSky.gif");
+        background-size: 100%;
+      }
+      h1 {
+        font-size: 500px;
+        text-align: center;
+        color: darkred;
+        font-family: impact;
+      }
+      body{
+        background-color: rgba(0, 0, 0, 0);
       }
     </style>
 
@@ -23,19 +32,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
 
     <!-- APPLICATION SCRIPTS -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/gtaIndexController.js"></script>
-    <scri
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/controllers/gtaIndexController.js"></script>
+    <script type="text/javascript">
+
+
+    var siren = new Audio('../images/air_raid_siren.mp3');
+    var beep = new Audio('../images/beep.wav');
+    var boom = new Audio('../images/nuclear_explosion.mp3');
+
+
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          beep.play();
+          $("h1").empty("");
+          $("h1").append("3");
+        },1000);
+        setTimeout(function() {
+          beep.play();
+          $("h1").empty("");
+          $("h1").append("2");
+        },2000);
+        setTimeout(function() {
+          beep.play();
+          $("h1").empty("");
+          $("h1").append("1");
+        },3000);
+        setTimeout(function() {
+          siren.play();
+          $("h1").empty("");
+        },4000);
+        setTimeout(function() {
+          boom.play();
+          console.log("boom");
+          $("html").css("background-image", "url('../images/nuke2.gif')");
+        },17500);
+        setTimeout(function () {
+          window.location.href= '../index.html'; // the redirect goes here
+        },21000);
+    });
+
+    </script>
+
     <meta charset="utf-8">
     <title>Fun in GTA</title>
   </head>
   <body>
-    <script type="text/javascript">
-      var siren = new Audio('../images/nuclear_explosion.mp3');
-        siren.play();
-      setTimeout(function () {
-        window.location.href= '../index.html'; // the redirect goes here
-      },3200); // 5 seconds
-
-    </script>
+    <h1>  </h1>
   </body>
