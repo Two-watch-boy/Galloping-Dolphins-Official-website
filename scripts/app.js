@@ -1,3 +1,5 @@
+var app = angular.module('sampleApp', ['ngRoute']);
+
 var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Commet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo"];
 
 var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
@@ -15,9 +17,8 @@ mikeMax = mikeArr.length -1;
 
 $(document).ready(function() {
 
-
   $(window).bind('scroll', function () {
-      if ($(window).scrollTop() > 1) {
+      if ($(window).scrollTop() > 0) {
           $('.navbar').addClass('fixed');
       } else {
           $('.navbar').removeClass('fixed');
