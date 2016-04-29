@@ -1,10 +1,10 @@
 var app = angular.module('sampleApp', ['ngRoute']);
 
-var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Commet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo"];
+var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Comet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo"];
 
 var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
 
-var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Commet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackel", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phonex", "Buccaneer", "Tornado", "Virgo", "Coquette Clasic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
+var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Comet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackel", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phonex", "Buccaneer", "Tornado", "Virgo", "Coquette Clasic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
 
 var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger"];
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
   $("#paulRandom").on("click", getRandomInt, paulArrVal);
   $("#mikeRandom").on("click", getRandomInt, mikeArrVal);
 
-
+  $( "#testMovingStuff" ).on("mousemove", getQuords);
 
   function marcusArrVal(){
     var y = getRandomInt(0, marcusMax);
@@ -149,4 +149,19 @@ function handleSelfDestruct(){
      window.location.href= 'self_destruct/selfDestruct.html'; // the redirect goes here
 
   },500);
+}
+
+function getQuords( event ) {
+  // var marginTop = parseInt($("#iconEmblum").css("margin-top"));
+  // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
+  // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
+  $("#landspeeder").css("margin-top", (300 + ((event.clientY) * 0.02)));
+  $("#landspeeder").css("margin-left", (600 + ((event.clientX) * 0.02)));
+  $("#gitcat").css("margin-top", (240 + ((event.clientY) * 0.03)));
+  $("#gitcat").css("margin-left", (400 + ((event.clientX) * 0.03)));
+  $("#house0").css("margin-top", (250 + ((event.clientY) * 0.01)));
+  $("#house0").css("margin-left", (800 + ((event.clientX) * 0.01)));
+  $("#house1").css("margin-top", (280 + ((event.clientY) * 0.01)));
+  $("#house1").css("margin-left", (1050 + ((event.clientX) * 0.01)));
+
 }
