@@ -159,7 +159,7 @@ function getQuords( event ) {
   $("#landspeeder").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
   $("#landspeedershadow").css("margin-top", (-3 + ((event.clientY) * 0.0005))+"%");
   $("#landspeedershadow").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
-  $("#gitcat").css("margin-top", (-14 + ((event.clientY) * 0.0005))+"%");
+  $("#gitcat").css("margin-top", (-30 + ((event.clientY) * 0.0005))+"%");
   $("#gitcat").css("margin-left", (32 + ((event.clientX) * 0.0005))+"%");
   $("#gitcatshadow").css("margin-top", (-2 + ((event.clientY) * 0.0005))+"%");
   $("#gitcatshadow").css("margin-left", (-10 + ((event.clientX) * 0.0005))+"%");
