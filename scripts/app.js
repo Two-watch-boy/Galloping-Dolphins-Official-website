@@ -155,17 +155,17 @@ function getQuords( event ) {
   // var marginTop = parseInt($("#iconEmblum").css("margin-top"));
   // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
   // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
-  $("#landspeeder").css("margin-top", (200 + ((event.clientY) * 0.0075)));
-  $("#landspeeder").css("margin-left", (575 + ((event.clientX) * 0.0075)));
-  $("#landspeedershadow").css("margin-top", (325 + ((event.clientY) * 0.0075)));
-  $("#landspeedershadow").css("margin-left", (575 + ((event.clientX) * 0.0075)));
-  $("#gitcat").css("margin-top", (140 + ((event.clientY) * 0.050)));
-  $("#gitcat").css("margin-left", (400 + ((event.clientX) * 0.050)));
-  $("#gitcatshadow").css("margin-top", (340 + ((event.clientY) * 0.005)));
-  $("#gitcatshadow").css("margin-left", (415 + ((event.clientX) * 0.005)));
-  $("#house0").css("margin-top", (150 + ((event.clientY) * 0.01)));
-  $("#house0").css("margin-left", (800 + ((event.clientX) * 0.01)));
-  $("#house1").css("margin-top", (180 + ((event.clientY) * 0.01)));
-  $("#house1").css("margin-left", (1050 + ((event.clientX) * 0.01)));
+  $("#landspeeder").css("margin-top", (17 + ((event.clientY) * 0.0005))+"%");
+  $("#landspeeder").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
+  $("#landspeedershadow").css("margin-top", (-3 + ((event.clientY) * 0.0005))+"%");
+  $("#landspeedershadow").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
+  $("#gitcat").css("margin-top", (-14 + ((event.clientY) * 0.0005))+"%");
+  $("#gitcat").css("margin-left", (32 + ((event.clientX) * 0.0005))+"%");
+  $("#gitcatshadow").css("margin-top", (-2 + ((event.clientY) * 0.0005))+"%");
+  $("#gitcatshadow").css("margin-left", (-10 + ((event.clientX) * 0.0005))+"%");
+  $("#house0").css("margin-top", (-26 + ((event.clientY) * 0.001))+"%");
+  $("#house0").css("margin-left", (65 + ((event.clientX) * 0.001))+"%");
+  $("#house1").css("margin-top", (-30 + ((event.clientY) * 0.001))+"%");
+  $("#house1").css("margin-left", (83 + ((event.clientX) * 0.001))+"%");
 
 }
