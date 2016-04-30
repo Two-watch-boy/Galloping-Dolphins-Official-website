@@ -1,12 +1,12 @@
 var app = angular.module('sampleApp', ['ngRoute']);
 
-var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion", "Dominator", "Comet", "Sanchez", "Osiris", "Vergo", "Dubsta", "Insurgent", "Sultan", "Kuruma", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackel", "Furore GT", "Blista", "Cognoscenti Cabrio", "Dubsta 6x6", "Schafter", "Baller", "Banshee", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo"];
+var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion Cabrio", "Dominator", "Comet", "Sanchez", "Osiris", "Virgo", "Dubsta", "Insurgent", "Sultan RS", "Kuruma (armored)", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackal", "Furore GT", "Blista", "Cognoscenti Cabrio (armored)", "Dubsta 6x6", "Schafter V12 (armored)", "Baller", "Banshee 900R", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo", "Fusilade"];
 
-var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
+var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee 900R", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion Cabrio", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
 
-var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Comet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackel", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phonex", "Buccaneer", "Tornado", "Virgo", "Coquette Clasic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
+var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Comet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackal", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma (armored)", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phoenix", "Buccaneer", "Tornado", "Virgo", "Coquette Classic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe"];
 
-var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter", "Massacro", "Banshee", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "HotKnife", "Roosevelt Vallor", "Windsor", "Fellon", "Zentorno", "Fellon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger"];
+var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter V12 (armored)", "Massacro", "Banshee 900R", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "Hotknife", "Roosevelt Valor", "Windsor", "Felon", "Zentorno", "Felon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger"];
 
 min = 0;
 marcusMax = marcusArr.length - 1;
@@ -155,13 +155,17 @@ function getQuords( event ) {
   // var marginTop = parseInt($("#iconEmblum").css("margin-top"));
   // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
   // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
-  $("#landspeeder").css("margin-top", (300 + ((event.clientY) * 0.02)));
-  $("#landspeeder").css("margin-left", (600 + ((event.clientX) * 0.02)));
-  $("#gitcat").css("margin-top", (240 + ((event.clientY) * 0.03)));
-  $("#gitcat").css("margin-left", (400 + ((event.clientX) * 0.03)));
-  $("#house0").css("margin-top", (250 + ((event.clientY) * 0.01)));
+  $("#landspeeder").css("margin-top", (200 + ((event.clientY) * 0.0075)));
+  $("#landspeeder").css("margin-left", (575 + ((event.clientX) * 0.0075)));
+  $("#landspeedershadow").css("margin-top", (325 + ((event.clientY) * 0.0075)));
+  $("#landspeedershadow").css("margin-left", (575 + ((event.clientX) * 0.0075)));
+  $("#gitcat").css("margin-top", (140 + ((event.clientY) * 0.050)));
+  $("#gitcat").css("margin-left", (400 + ((event.clientX) * 0.050)));
+  $("#gitcatshadow").css("margin-top", (340 + ((event.clientY) * 0.005)));
+  $("#gitcatshadow").css("margin-left", (415 + ((event.clientX) * 0.005)));
+  $("#house0").css("margin-top", (150 + ((event.clientY) * 0.01)));
   $("#house0").css("margin-left", (800 + ((event.clientX) * 0.01)));
-  $("#house1").css("margin-top", (280 + ((event.clientY) * 0.01)));
+  $("#house1").css("margin-top", (180 + ((event.clientY) * 0.01)));
   $("#house1").css("margin-left", (1050 + ((event.clientX) * 0.01)));
 
 }

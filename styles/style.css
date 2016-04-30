@@ -154,30 +154,43 @@ h1{
   background-repeat: no-repeat;
   z-index: 1;
   border: 2px dashed;
-  position: absolute;;
+  position: static;
 }
 #landspeeder{
   position: absolute;
   z-index: 5;
-  margin-top: 300px;
-  margin-left: 600px;
+  margin-top: 200px;
+  margin-left: 575px;
+}
+#landspeedershadow{
+  position: absolute;
+  z-index: 4;
+  margin-top: 325px;
+  margin-left: 575px;
 }
 #gitcat{
   position: absolute;
   z-index: 10;
-  margin-top: 240px;
+  margin-top: 140px;
   margin-left: 400px;
 }
+#gitcatshadow{
+  position: absolute;
+  z-index: 9;
+  margin-top: 340px;
+  margin-left: 415px;
+}
+
 #house0{
   position: absolute;
   z-index: 3;
-  margin-top: 250px;
+  margin-top: 150px;
   margin-left: 800px;
 }
 #house1{
   position: absolute;
   z-index: 2;
-  margin-top: 280px;
+  margin-top: 180px;
   margin-left: 1050px;
 }
 span {
