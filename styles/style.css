@@ -171,19 +171,16 @@ h1{
   width: 23%;
   height: auto;
   margin-top: 5%;
-  margin-left: -8%;
+  margin-left: -6%;
 }
 #paulreact{
   position: relative;
   z-index: 9;
   width: 19%;
   height: auto;
-  margin-top: 7%;
-  margin-left: -6%;
+  margin-top: 5%;
+  margin-left: -9%;
 }
-/*#paulreact:hover{
-  width: 25%;
-}*/
 #mikereact{
   position: relative;
   z-index: 8;

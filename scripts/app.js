@@ -161,9 +161,9 @@ function getQuords( event ) {
   $("#marcusreact").css("margin-top", (4 - ((event.clientY) * 0.0008))+"%");
   $("#marcusreact").css("margin-left", (22 + ((event.clientX) * 0.0005))+"%");
   $("#naomireact").css("margin-top", (5 - ((event.clientY) * 0.0006))+"%");
-  $("#naomireact").css("margin-left", (-8 + ((event.clientX) * 0.0003))+"%");
-  $("#paulreact").css("margin-top", (7 - ((event.clientY) * 0.0007))+"%");
-  $("#paulreact").css("margin-left", (-6 + ((event.clientX) * 0.0004))+"%");
+  $("#naomireact").css("margin-left", (-6 + ((event.clientX) * 0.0003))+"%");
+  $("#paulreact").css("margin-top", (5 - ((event.clientY) * 0.0007))+"%");
+  $("#paulreact").css("margin-left", (-9 + ((event.clientX) * 0.0004))+"%");
   $("#mikereact").css("margin-top", (7 - ((event.clientY) * 0.0008))+"%");
   $("#mikereact").css("margin-left", (-6 + ((event.clientX) * 0.0005))+"%");
   // $("#testMovingStuff").css("margin-top", ((event.clientY) * 0.0001)+"%");
