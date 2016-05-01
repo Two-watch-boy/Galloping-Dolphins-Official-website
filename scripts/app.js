@@ -53,6 +53,9 @@ $(document).ready(function() {
 
   $( "#testMovingStuff" ).on("mousemove", getQuords);
 
+  $("#paulreact").on("mousedown", handleImageToggleDown);
+  $("#paulreact").on("mouseup", handleImageToggleUp);
+
   function marcusArrVal(){
     var y = getRandomInt(0, marcusMax);
     console.log("random number", y);
@@ -168,4 +171,12 @@ function getQuords( event ) {
   // $("#house1").css("margin-top", (-30 + ((event.clientY) * 0.0015))+"%");
   // $("#house1").css("margin-left", (83 + ((event.clientX) * 0.0015))+"%");
 
+}
+function handleImageToggleDown(){
+  $("#paulreact").attr('src', "images/reactive/jazzhands.png");
+  $("#paulreact").css('width', "25%");
+}
+function handleImageToggleUp(){
+  $("#paulreact").attr('src', "images/reactive/paul1.png");
+  $("#paulreact").css('width', "19%");
 }
