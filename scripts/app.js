@@ -155,17 +155,17 @@ function getQuords( event ) {
   // var marginTop = parseInt($("#iconEmblum").css("margin-top"));
   // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
   // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
-  $("#landspeeder").css("margin-top", (17 + ((event.clientY) * 0.0005))+"%");
-  $("#landspeeder").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
-  $("#landspeedershadow").css("margin-top", (-3 + ((event.clientY) * 0.0005))+"%");
-  $("#landspeedershadow").css("margin-left", (40 + ((event.clientX) * 0.0005))+"%");
-  $("#gitcat").css("margin-top", (-30 + ((event.clientY) * 0.00075))+"%");
-  $("#gitcat").css("margin-left", (32 + ((event.clientX) * 0.00075))+"%");
-  $("#gitcatshadow").css("margin-top", (-2 + ((event.clientY) * 0.00075))+"%");
-  $("#gitcatshadow").css("margin-left", (-10 + ((event.clientX) * 0.00075))+"%");
-  $("#house0").css("margin-top", (-26 + ((event.clientY) * 0.001))+"%");
-  $("#house0").css("margin-left", (65 + ((event.clientX) * 0.001))+"%");
-  $("#house1").css("margin-top", (-30 + ((event.clientY) * 0.0015))+"%");
-  $("#house1").css("margin-left", (83 + ((event.clientX) * 0.0015))+"%");
+  $("#marcusreact").css("margin-top", (4 - ((event.clientY) * 0.0008))+"%");
+  $("#marcusreact").css("margin-left", (22 + ((event.clientX) * 0.0005))+"%");
+  $("#naomireact").css("margin-top", (5 - ((event.clientY) * 0.0006))+"%");
+  $("#naomireact").css("margin-left", (-8 + ((event.clientX) * 0.0003))+"%");
+  $("#paulreact").css("margin-top", (7 - ((event.clientY) * 0.0007))+"%");
+  $("#paulreact").css("margin-left", (-6 + ((event.clientX) * 0.0004))+"%");
+  $("#mikereact").css("margin-top", (7 - ((event.clientY) * 0.0008))+"%");
+  $("#mikereact").css("margin-left", (-6 + ((event.clientX) * 0.0005))+"%");
+  // $("#testMovingStuff").css("margin-top", ((event.clientY) * 0.0001)+"%");
+  // $("#testMovingStuff").css("margin-left", ((event.clientX) * 0.0001)+"%");
+  // $("#house1").css("margin-top", (-30 + ((event.clientY) * 0.0015))+"%");
+  // $("#house1").css("margin-left", (83 + ((event.clientX) * 0.0015))+"%");
 
 }
