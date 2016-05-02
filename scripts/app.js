@@ -159,13 +159,13 @@ function getQuords( event ) {
   // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
   // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
   $("#marcusreact").css("margin-top", (4 - ((event.clientY) * 0.0008))+"%");
-  $("#marcusreact").css("margin-left", (22 + ((event.clientX) * 0.0005))+"%");
+  $("#marcusreact").css("margin-left", (22 - ((event.clientX) * 0.0005))+"%");
   $("#naomireact").css("margin-top", (5 - ((event.clientY) * 0.0006))+"%");
-  $("#naomireact").css("margin-left", (-6 + ((event.clientX) * 0.0003))+"%");
+  $("#naomireact").css("margin-left", (-6 - ((event.clientX) * 0.0003))+"%");
   $("#paulreact").css("margin-top", (5 - ((event.clientY) * 0.0007))+"%");
   $("#paulreact").css("margin-left", (-9 + ((event.clientX) * 0.0004))+"%");
   $("#mikereact").css("margin-top", (7 - ((event.clientY) * 0.0008))+"%");
-  $("#mikereact").css("margin-left", (-6 + ((event.clientX) * 0.0005))+"%");
+  $("#mikereact").css("margin-left", (-6 + ((event.clientX) * 0.001))+"%");
   // $("#testMovingStuff").css("margin-top", ((event.clientY) * 0.0001)+"%");
   // $("#testMovingStuff").css("margin-left", ((event.clientX) * 0.0001)+"%");
   // $("#house1").css("margin-top", (-30 + ((event.clientY) * 0.0015))+"%");
