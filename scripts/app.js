@@ -51,7 +51,7 @@ $(document).ready(function() {
   $("#paulRandom").on("click", getRandomInt, paulArrVal);
   $("#mikeRandom").on("click", getRandomInt, mikeArrVal);
 
-  $( "#testMovingStuff" ).on("mousemove", getQuords);
+  $("#testMovingStuff").on("mousemove", getQuords);
 
   $("#paulreact").on("mousedown", handleImageToggleDown);
   $("#paulreact").on("mouseup", handleImageToggleUp);
@@ -157,10 +157,10 @@ function handleSelfDestruct(){
 function getQuords( event ) {
   // var marginTop = parseInt($("#iconEmblum").css("margin-top"));
   // var marginLeft = parseInt($("#iconEmblum").css("margin-left"));
-  // console.log((marginLeft + event.clientX), (marginTop + event.clientY));
+  // console.log((event.clientX), (event.clientY));
   $("#marcusreact").css("margin-top", (4 - ((event.clientY) * 0.0008))+"%");
   $("#marcusreact").css("margin-left", (22 - ((event.clientX) * 0.0005))+"%");
-  $("#naomireact").css("margin-top", (5 - ((event.clientY) * 0.0006))+"%");
+  $("#naomireact").css("margin-top", (1 - ((event.clientY) * 0.0006))+"%");
   $("#naomireact").css("margin-left", (-6 - ((event.clientX) * 0.0003))+"%");
   $("#paulreact").css("margin-top", (5 - ((event.clientY) * 0.0007))+"%");
   $("#paulreact").css("margin-left", (-9 + ((event.clientX) * 0.0004))+"%");
@@ -179,4 +179,14 @@ function handleImageToggleDown(){
 function handleImageToggleUp(){
   $("#paulreact").attr('src', "images/reactive/paul1.png");
   $("#paulreact").css('width', "19%");
+}
+
+
+if(window.DeviceMotionEvent){
+  window.addEventListener("devicemotion", motion, false);
+}else{
+  console.log("DeviceMotionEvent is not supported");
+}
+function motion(event){
+  console.log("Accelerometer: "+ event.accelerationIncludingGravity.x + ", " + event.accelerationIncludingGravity.y + ", " + event.accelerationIncludingGravity.z);
 }
