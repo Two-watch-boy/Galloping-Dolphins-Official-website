@@ -1,6 +1,6 @@
 var app = angular.module('sampleApp', ['ngRoute']);
 
-var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion Cabrio", "Dominator", "Comet", "Sanchez", "Osiris", "Virgo", "Dubsta", "Insurgent", "Sultan RS", "Kuruma (armored)", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackal", "Furore GT", "Blista", "Cognoscenti Cabrio (armored)", "Dubsta 6x6", "Schafter V12 (armored)", "Baller", "Banshee 900R", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo", "Fusilade", "Hexer", "Daemon"];
+var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Rocoto", "Windsor", "Brawler", "Zion Cabrio", "Dominator", "Comet", "Sanchez", "Osiris", "Virgo", "Dubsta", "Insurgent", "Sultan RS", "Kuruma (armored)", "Stanier", "Roosevelt", "Emperor", "Hakuchou", "T20","RH8", "Monroe", "Gang Burrito", "Jackal", "Furore GT", "Blista", "Cognoscenti Cabrio (armored)", "Dubsta 6x6", "Schafter V12 (armored)", "Baller", "Banshee 900R", "Buccaneer", "Primo", "Chino", "Faction", "Moonbeam", "Tornado", "Voodoo", "Fusilade", "Hexer", "Daemon", "Patriot", "Futo"];
 
 var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee 900R", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion Cabrio", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
 
@@ -182,11 +182,11 @@ function handleImageToggleUp(){
 }
 
 
-if(window.DeviceMotionEvent){
-  window.addEventListener("devicemotion", motion, false);
-}else{
-  console.log("DeviceMotionEvent is not supported");
-}
-function motion(event){
-  console.log("Accelerometer: "+ event.accelerationIncludingGravity.x + ", " + event.accelerationIncludingGravity.y + ", " + event.accelerationIncludingGravity.z);
-}
+// if(window.DeviceMotionEvent){
+//   window.addEventListener("devicemotion", motion, false);
+// }else{
+//   console.log("DeviceMotionEvent is not supported");
+// }
+// function motion(event){
+//   console.log("Accelerometer: "+ event.accelerationIncludingGravity.x + ", " + event.accelerationIncludingGravity.y + ", " + event.accelerationIncludingGravity.z);
+// }
