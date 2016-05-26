@@ -4,9 +4,9 @@ var marcusArr = ["Bati 801", "9F", "Vindicator", "Casco", "Bagger", "Adder", "Ro
 
 var naomiArr = ["Dubsta", "Voltic", "Voodoo", "RH8", "Sultan RS", "Banshee 900R", "Tornado", "Jester", "Slamvan", "Akuma", "Dubsta 6x6", "Habanero", "Surge", "Bifta", "Coquette", "Rebel", "Prairie", "Ruiner", "Futo", "Sanchez", "Penumbra", "Dominator", "Sabre Turbo", "Zion Cabrio", "Panto", "Blista", "Comet", "Kuruma", "Bati 801"];
 
-var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Comet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Carbon RS", "Akuma", "Nemesis", "Sanchez", "Jackal", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma (armored)", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phoenix", "Buccaneer", "Tornado", "Virgo", "Coquette Classic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe", "Adder", "Zion Cabrio"];
+var paulArr = ["Surano", "Schwartzer", "Sentinel XS", "Furore GT", "Coquette", "Feltzer", "Comet", "RH8", "9F Cabrio", "Khamelion", "Double T", "Gang Burrito", "Akuma", "Nemesis", "Sanchez", "Jackal", "Bagger", "Futo", "Panto", "Insurgent", "Dubsta 6x6", "Patriot", "Granger", "Brawler", "Kuruma (armored)", "Stratum", "Rhapsody", "Issi", "Slamvan", "Emperor", "Phoenix", "Buccaneer", "Tornado", "Virgo", "Coquette Classic", "Nightshade", "Chino", "Voltic", "Osiris", "Sultan RS", "Entity XF", "T20", "Infernus", "Vacca", "Zentorno", "Monroe", "Adder", "Zion Cabrio"];
 
-var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter V12 (armored)", "Massacro", "Banshee 900R", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "Hotknife", "Roosevelt Valor", "Windsor", "Felon", "Zentorno", "Felon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger"];
+var mikeArr = ["T20", "Mamba", "Sterling", "Verlierer", "Dukes", "Schafter V12 (armored)", "Massacro", "Banshee 900R", "Slamvan", "Turismo R", "Sultan RS", "Stinger", "Blista", "Hotknife", "Roosevelt Valor", "Windsor", "Felon", "Zentorno", "Felon GT", "Buccaneer", "Huntley S", "Brawler", "Dubsta 6x6", "Jester", "Double T", "Enduro", "Sanchez", "Bati 801", "Bagger", "Kuruma (armored)"];
 
 min = 0;
 marcusMax = marcusArr.length - 1;
